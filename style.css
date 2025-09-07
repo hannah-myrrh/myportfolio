@@ -1,0 +1,272 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  scroll-behavior: smooth;
+}
+
+/* Navbar */
+header {
+  background: #222;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #f39c12;
+}
+
+/* Hero */
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #a8dadc, #457b9d); 
+  color: #fff;
+  padding-top: 70px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  max-width: 900px;
+  gap: 40px;
+  text-align: left;
+}
+
+.hero-left {
+  flex: 1;
+}
+
+.hero-right {
+  flex: 2;
+}
+
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.hero h1 span {
+  color: #ffd166; /* accent color */
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: #264653;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background: #1d3557;
+}
+
+/* Sections */
+section {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Projects */
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.project {
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.project-info {
+  padding: 15px;
+}
+
+.project-info p {
+  font-size: 12px;
+  color: #444;  /* softer dark gray */
+  line-height: 1.5;
+}
+
+
+/* Skills */
+.skills ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background: #f39c12;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 20px;
+}
+
+/* Skills */
+.skills {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skills {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap; /* allows wrapping to new line */
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #52b788; /* light green theme */
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  display: inline-block;
+  transition: background 0.3s ease;
+}
+
+.skill:hover {
+  background: #40916c; /* darker green on hover */
+}
+
+.skill-wide {
+  flex-basis: 100%; /* forces it to go to the next line */
+  text-align: center;
+}
+
+
+
+
+/* Contact */
+.contact a {
+  color: #e76f51;
+  text-decoration: none;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.contact i {
+  margin-right: 8px;
+  color: #40916c; /* match your theme */
+}
+
+.social-links {
+  margin-top: 15px;
+}
+
+.social-links a {
+  margin: 0 10px;
+  font-size: 28px;
+  color: #40916c; /* theme green */
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #1b4332; /* darker green on hover */
+}
+
+
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
